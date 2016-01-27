@@ -7,7 +7,48 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="84"></block>
+      <block type="controls_if" id="163" inline="false">
+        <mutation elseif="1" else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="258" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_object" id="213">
+                <field name="OBJECT">LEFTFRONT</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="296">
+                <field name="NUM">30</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="movement_right" id="314"></block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_compare" id="372" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_object" id="342">
+                <field name="OBJECT">RIGHTFRONT</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="388">
+                <field name="NUM">30</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="movement_left" id="404"></block>
+        </statement>
+        <statement name="ELSE">
+          <block type="movement_forward" id="84"></block>
+        </statement>
+      </block>
     </statement>
     <next>
       <block type="movement_stop" id="141"></block>
