@@ -8,7 +8,7 @@
     </value>
     <statement name="DO">
       <block type="controls_if" id="163" inline="false">
-        <mutation elseif="1"></mutation>
+        <mutation elseif="1" else="1"></mutation>
         <value name="IF0">
           <block type="logic_compare" id="258" inline="true">
             <field name="OP">GT</field>
@@ -25,7 +25,11 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_forward" id="84"></block>
+          <block type="movement_left" id="926">
+            <next>
+              <block type="movement_forward" id="84"></block>
+            </next>
+          </block>
         </statement>
         <value name="IF1">
           <block type="logic_compare" id="372" inline="true">
@@ -43,7 +47,14 @@
           </block>
         </value>
         <statement name="DO1">
-          <block type="movement_forward" id="878"></block>
+          <block type="movement_right" id="936">
+            <next>
+              <block type="movement_forward" id="878"></block>
+            </next>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="movement_forward" id="960"></block>
         </statement>
       </block>
     </statement>
