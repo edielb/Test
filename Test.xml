@@ -11,7 +11,7 @@
         <mutation elseif="1" else="1"></mutation>
         <value name="IF0">
           <block type="logic_compare" id="258" inline="true">
-            <field name="OP">GT</field>
+            <field name="OP">LT</field>
             <value name="A">
               <block type="sensor_object" id="213">
                 <field name="OBJECT">LEFTFRONT</field>
@@ -19,7 +19,7 @@
             </value>
             <value name="B">
               <block type="math_number" id="296">
-                <field name="NUM">60</field>
+                <field name="NUM">120</field>
               </block>
             </value>
           </block>
@@ -33,7 +33,7 @@
         </statement>
         <value name="IF1">
           <block type="logic_compare" id="372" inline="true">
-            <field name="OP">GT</field>
+            <field name="OP">LT</field>
             <value name="A">
               <block type="sensor_object" id="342">
                 <field name="OBJECT">RIGHTFRONT</field>
@@ -41,7 +41,7 @@
             </value>
             <value name="B">
               <block type="math_number" id="388">
-                <field name="NUM">60</field>
+                <field name="NUM">120</field>
               </block>
             </value>
           </block>
