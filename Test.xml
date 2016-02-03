@@ -54,4 +54,56 @@
       <block type="movement_stop" id="12"></block>
     </next>
   </block>
+  <block type="controls_whileUntil" id="340" inline="false" x="-128" y="224">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="347">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="controls_if" id="511" inline="false">
+        <mutation elseif="1" else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="442" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_light" id="385">
+                <field name="LIGHT">LEFT</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="464">
+                <field name="NUM">50</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="movement_reverse" id="555"></block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_compare" id="568" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_light" id="569">
+                <field name="LIGHT">RIGHT</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="570">
+                <field name="NUM">50</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="movement_reverse" id="571"></block>
+        </statement>
+        <statement name="ELSE">
+          <block type="movement_forward" id="566"></block>
+        </statement>
+      </block>
+    </statement>
+  </block>
 </xml>
