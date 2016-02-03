@@ -1,35 +1,35 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="32" inline="false" x="-121" y="-77">
+  <block type="controls_whileUntil" id="1" inline="false" x="-121" y="-77">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
-      <block type="sensor_button" id="74">
+      <block type="sensor_button" id="2">
         <field name="OBJECT">ENTER</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="990">
+      <block type="movement_forward" id="3">
         <next>
-          <block type="robot_delay" id="1002" inline="true">
+          <block type="robot_delay" id="4" inline="true">
             <value name="DELAY">
-              <block type="math_number" id="1013">
+              <block type="math_number" id="5">
                 <field name="NUM">10</field>
               </block>
             </value>
             <next>
-              <block type="movement_right" id="1024">
+              <block type="movement_right" id="6">
                 <next>
-                  <block type="robot_delay" id="1147" inline="true">
+                  <block type="robot_delay" id="7" inline="true">
                     <value name="DELAY">
-                      <block type="math_number" id="1154">
+                      <block type="math_number" id="8">
                         <field name="NUM">10</field>
                       </block>
                     </value>
                     <next>
-                      <block type="movement_reverse" id="1164">
+                      <block type="movement_reverse" id="9">
                         <next>
-                          <block type="robot_delay" id="1197" inline="true">
+                          <block type="robot_delay" id="10" inline="true">
                             <value name="DELAY">
-                              <block type="math_number" id="1211">
+                              <block type="math_number" id="11">
                                 <field name="NUM">10</field>
                               </block>
                             </value>
@@ -46,7 +46,7 @@
       </block>
     </statement>
     <next>
-      <block type="movement_stop" id="141"></block>
+      <block type="movement_stop" id="12"></block>
     </next>
   </block>
 </xml>
