@@ -8,7 +8,7 @@
     </value>
     <statement name="DO">
       <block type="controls_if" id="3" inline="false">
-        <mutation elseif="1" else="1"></mutation>
+        <mutation elseif="2" else="1"></mutation>
         <value name="IF0">
           <block type="logic_compare" id="4" inline="true">
             <field name="OP">LT</field>
@@ -25,7 +25,20 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_reverse" id="7"></block>
+          <block type="movement_reverse" id="7">
+            <next>
+              <block type="robot_delay" id="103" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="110">
+                    <field name="NUM">50</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_right" id="130"></block>
+                </next>
+              </block>
+            </next>
+          </block>
         </statement>
         <value name="IF1">
           <block type="logic_compare" id="8" inline="true">
@@ -43,7 +56,51 @@
           </block>
         </value>
         <statement name="DO1">
-          <block type="movement_reverse" id="11"></block>
+          <block type="movement_reverse" id="11">
+            <next>
+              <block type="robot_delay" id="132" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="139">
+                    <field name="NUM">50</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_left" id="149"></block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="IF2">
+          <block type="logic_compare" id="69" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_light" id="62">
+                <field name="LIGHT">REAR</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="83">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO2">
+          <block type="movement_reverse" id="159">
+            <next>
+              <block type="robot_delay" id="177" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="190">
+                    <field name="NUM">50</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_right" id="200"></block>
+                </next>
+              </block>
+            </next>
+          </block>
         </statement>
         <statement name="ELSE">
           <block type="movement_forward" id="12"></block>
