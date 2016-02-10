@@ -8,18 +8,18 @@
     </value>
     <statement name="DO">
       <block type="controls_if" id="3" inline="false">
-        <mutation elseif="2" else="1"></mutation>
+        <mutation elseif="1" else="1"></mutation>
         <value name="IF0">
-          <block type="logic_compare" id="25" inline="true">
+          <block type="logic_compare" id="78" inline="true">
             <field name="OP">LT</field>
             <value name="A">
-              <block type="sensor_light" id="18">
-                <field name="LIGHT">LEFT</field>
+              <block type="sensor_object" id="79">
+                <field name="OBJECT">LEFTFRONT</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="32">
-                <field name="NUM">2</field>
+              <block type="math_number" id="80">
+                <field name="NUM">100</field>
               </block>
             </value>
           </block>
@@ -28,40 +28,22 @@
           <block type="movement_right" id="5"></block>
         </statement>
         <value name="IF1">
-          <block type="logic_compare" id="36" inline="true">
+          <block type="logic_compare" id="64" inline="true">
             <field name="OP">LT</field>
             <value name="A">
-              <block type="sensor_light" id="37">
-                <field name="LIGHT">RIGHT</field>
+              <block type="sensor_object" id="57">
+                <field name="OBJECT">RIGHTFRONT</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="38">
-                <field name="NUM">2</field>
+              <block type="math_number" id="77">
+                <field name="NUM">100</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO1">
           <block type="movement_left" id="7"></block>
-        </statement>
-        <value name="IF2">
-          <block type="logic_compare" id="33" inline="true">
-            <field name="OP">LT</field>
-            <value name="A">
-              <block type="sensor_light" id="34">
-                <field name="LIGHT">REAR</field>
-              </block>
-            </value>
-            <value name="B">
-              <block type="math_number" id="35">
-                <field name="NUM">2</field>
-              </block>
-            </value>
-          </block>
-        </value>
-        <statement name="DO2">
-          <block type="movement_reverse" id="9"></block>
         </statement>
         <statement name="ELSE">
           <block type="movement_forward" id="10"></block>
