@@ -25,10 +25,10 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_forward" id="116"></block>
+          <block type="movement_right" id="143"></block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_right" id="143"></block>
+          <block type="movement_forward" id="116"></block>
         </statement>
       </block>
     </statement>
