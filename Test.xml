@@ -64,7 +64,7 @@
           <block type="movement_right" id="241"></block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_forward" id="262"></block>
+          <block type="movement_right" id="288"></block>
         </statement>
       </block>
     </statement>
