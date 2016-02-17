@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="41" inline="false" x="-139" y="-653">
+  <block type="controls_whileUntil" id="41" inline="false" x="-194" y="-702">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_button" id="72">
@@ -25,7 +25,17 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_reverse" id="337"></block>
+          <block type="movement_reverse" id="337">
+            <next>
+              <block type="robot_delay" id="355" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="362">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
         </statement>
         <value name="IF1">
           <block type="logic_compare" id="224" inline="true">
@@ -43,7 +53,17 @@
           </block>
         </value>
         <statement name="DO1">
-          <block type="movement_reverse" id="308"></block>
+          <block type="movement_reverse" id="308">
+            <next>
+              <block type="robot_delay" id="384" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="400">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
         </statement>
         <value name="IF2">
           <block type="logic_compare" id="227" inline="true">
@@ -61,7 +81,17 @@
           </block>
         </value>
         <statement name="DO2">
-          <block type="movement_reverse" id="327"></block>
+          <block type="movement_reverse" id="327">
+            <next>
+              <block type="robot_delay" id="386" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="423">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
         </statement>
         <statement name="ELSE">
           <block type="movement_forward" id="298"></block>
