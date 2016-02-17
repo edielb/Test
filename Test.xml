@@ -25,16 +25,8 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_reverse" id="337">
-            <next>
-              <block type="robot_delay" id="355" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="362">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
-              </block>
-            </next>
+          <block type="procedures_callnoreturn" id="436">
+            <mutation name="backup and spin"></mutation>
           </block>
         </statement>
         <value name="IF1">
@@ -53,16 +45,8 @@
           </block>
         </value>
         <statement name="DO1">
-          <block type="movement_reverse" id="308">
-            <next>
-              <block type="robot_delay" id="384" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="400">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
-              </block>
-            </next>
+          <block type="procedures_callnoreturn" id="441">
+            <mutation name="backup and spin"></mutation>
           </block>
         </statement>
         <value name="IF2">
@@ -81,16 +65,8 @@
           </block>
         </value>
         <statement name="DO2">
-          <block type="movement_reverse" id="327">
-            <next>
-              <block type="robot_delay" id="386" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="423">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
-              </block>
-            </next>
+          <block type="procedures_callnoreturn" id="446">
+            <mutation name="backup and spin"></mutation>
           </block>
         </statement>
         <statement name="ELSE">
@@ -101,5 +77,35 @@
     <next>
       <block type="movement_stop" id="65"></block>
     </next>
+  </block>
+  <block type="procedures_defnoreturn" id="427" x="-108" y="-316">
+    <mutation></mutation>
+    <field name="NAME">backup and spin</field>
+    <statement name="STACK">
+      <block type="movement_reverse" id="327">
+        <next>
+          <block type="robot_delay" id="386" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="423">
+                <field name="NUM">500</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_right" id="456">
+                <next>
+                  <block type="robot_delay" id="384" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="400">
+                        <field name="NUM">500</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
   </block>
 </xml>
