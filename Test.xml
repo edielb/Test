@@ -78,7 +78,7 @@
       <block type="movement_stop" id="17"></block>
     </next>
   </block>
-  <block type="procedures_defnoreturn" id="18" x="17" y="-480">
+  <block type="procedures_defnoreturn" id="18" x="-180" y="-439">
     <mutation></mutation>
     <field name="NAME">backupandspin</field>
     <statement name="STACK">
@@ -106,7 +106,7 @@
                         </value>
                         <value name="B">
                           <block type="math_number" id="198">
-                            <field name="NUM">5</field>
+                            <field name="NUM">50</field>
                           </block>
                         </value>
                       </block>
@@ -121,7 +121,7 @@
                         </value>
                         <value name="B">
                           <block type="math_number" id="201">
-                            <field name="NUM">5</field>
+                            <field name="NUM">50</field>
                           </block>
                         </value>
                       </block>
