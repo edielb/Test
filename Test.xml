@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="1" inline="false" x="-150" y="-744">
+  <block type="controls_whileUntil" id="1" inline="false" x="-171" y="-791">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_button" id="2">
@@ -78,7 +78,7 @@
       <block type="movement_stop" id="17"></block>
     </next>
   </block>
-  <block type="procedures_defnoreturn" id="18" x="54" y="-378">
+  <block type="procedures_defnoreturn" id="18" x="-25" y="-482">
     <mutation></mutation>
     <field name="NAME">backupandspin</field>
     <statement name="STACK">
@@ -91,16 +91,26 @@
               </block>
             </value>
             <next>
-              <block type="movement_right" id="22">
-                <next>
-                  <block type="robot_delay" id="23" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="24">
-                        <field name="NUM">2500</field>
+              <block type="controls_whileUntil" id="139" inline="false">
+                <field name="MODE">UNTIL</field>
+                <value name="NUMBER">
+                  <block type="logic_operation" id="175" inline="true">
+                    <field name="OP">LOR</field>
+                    <value name="A">
+                      <block type="sensor_object" id="147">
+                        <field name="OBJECT">LEFTFRONT</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="sensor_object" id="183">
+                        <field name="OBJECT">RIGHTFRONT</field>
                       </block>
                     </value>
                   </block>
-                </next>
+                </value>
+                <statement name="DO">
+                  <block type="movement_right" id="22"></block>
+                </statement>
               </block>
             </next>
           </block>
