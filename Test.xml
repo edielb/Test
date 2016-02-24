@@ -11,7 +11,7 @@
         <mutation elseif="2" else="1"></mutation>
         <value name="IF0">
           <block type="logic_compare" id="4" inline="true">
-            <field name="OP">GT</field>
+            <field name="OP">EQ</field>
             <value name="A">
               <block type="sensor_line" id="5">
                 <field name="LINE">MIDDLE</field>
@@ -31,7 +31,7 @@
         </statement>
         <value name="IF1">
           <block type="logic_compare" id="8" inline="true">
-            <field name="OP">GT</field>
+            <field name="OP">EQ</field>
             <value name="A">
               <block type="sensor_line" id="9">
                 <field name="LINE">LEFT</field>
@@ -51,7 +51,7 @@
         </statement>
         <value name="IF2">
           <block type="logic_compare" id="12" inline="true">
-            <field name="OP">GT</field>
+            <field name="OP">EQ</field>
             <value name="A">
               <block type="sensor_line" id="13">
                 <field name="LINE">RIGHT</field>
