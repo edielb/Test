@@ -82,20 +82,20 @@
     <mutation></mutation>
     <field name="NAME">backupandspin</field>
     <statement name="STACK">
-      <block type="movement_reverse" id="21">
+      <block type="movement_reverse" id="19">
         <next>
-          <block type="robot_delay" id="19" inline="true">
+          <block type="robot_delay" id="20" inline="true">
             <value name="DELAY">
-              <block type="math_number" id="20">
+              <block type="math_number" id="21">
                 <field name="NUM">2500</field>
               </block>
             </value>
             <next>
-              <block type="movement_right" id="24">
+              <block type="movement_right" id="22">
                 <next>
-                  <block type="robot_delay" id="22" inline="true">
+                  <block type="robot_delay" id="23" inline="true">
                     <value name="DELAY">
-                      <block type="math_number" id="23">
+                      <block type="math_number" id="24">
                         <field name="NUM">2500</field>
                       </block>
                     </value>
