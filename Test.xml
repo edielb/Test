@@ -91,11 +91,11 @@
               </block>
             </value>
             <next>
-              <block type="movement_right" id="50">
+              <block type="movement_right" id="22">
                 <next>
-                  <block type="robot_delay" id="51" inline="true">
+                  <block type="robot_delay" id="23" inline="true">
                     <value name="DELAY">
-                      <block type="math_number" id="52">
+                      <block type="math_number" id="24">
                         <field name="NUM">2500</field>
                       </block>
                     </value>
