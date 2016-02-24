@@ -11,7 +11,7 @@
         <mutation elseif="2" else="1"></mutation>
         <value name="IF0">
           <block type="logic_compare" id="4" inline="true">
-            <field name="OP">EQ</field>
+            <field name="OP">GT</field>
             <value name="A">
               <block type="sensor_line" id="5">
                 <field name="LINE">MIDDLE</field>
@@ -19,7 +19,7 @@
             </value>
             <value name="B">
               <block type="math_number" id="6">
-                <field name="NUM">1</field>
+                <field name="NUM">0</field>
               </block>
             </value>
           </block>
@@ -31,7 +31,7 @@
         </statement>
         <value name="IF1">
           <block type="logic_compare" id="8" inline="true">
-            <field name="OP">EQ</field>
+            <field name="OP">GT</field>
             <value name="A">
               <block type="sensor_line" id="9">
                 <field name="LINE">LEFT</field>
@@ -39,7 +39,7 @@
             </value>
             <value name="B">
               <block type="math_number" id="10">
-                <field name="NUM">1</field>
+                <field name="NUM">0</field>
               </block>
             </value>
           </block>
@@ -51,7 +51,7 @@
         </statement>
         <value name="IF2">
           <block type="logic_compare" id="12" inline="true">
-            <field name="OP">EQ</field>
+            <field name="OP">GT</field>
             <value name="A">
               <block type="sensor_line" id="13">
                 <field name="LINE">RIGHT</field>
@@ -59,7 +59,7 @@
             </value>
             <value name="B">
               <block type="math_number" id="14">
-                <field name="NUM">1</field>
+                <field name="NUM">0</field>
               </block>
             </value>
           </block>
@@ -78,27 +78,28 @@
       <block type="movement_stop" id="17"></block>
     </next>
   </block>
-  <block type="procedures_defnoreturn" id="18" x="-180" y="-439">
+  <block type="procedures_defnoreturn" id="18" x="184" y="-734">
     <mutation></mutation>
     <field name="NAME">backupandspin</field>
     <statement name="STACK">
-      <block type="robot_delay" id="20" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="21">
-            <field name="NUM">2500</field>
-          </block>
-        </value>
+      <block type="movement_reverse" id="21">
         <next>
-          <block type="movement_reverse" id="19">
+          <block type="robot_delay" id="19" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="20">
+                <field name="NUM">2500</field>
+              </block>
+            </value>
             <next>
-              <block type="robot_delay" id="23" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="24">
-                    <field name="NUM">2500</field>
-                  </block>
-                </value>
+              <block type="movement_right" id="24">
                 <next>
-                  <block type="movement_right" id="22"></block>
+                  <block type="robot_delay" id="22" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="23">
+                        <field name="NUM">2500</field>
+                      </block>
+                    </value>
+                  </block>
                 </next>
               </block>
             </next>
